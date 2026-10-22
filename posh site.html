@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lamine Posh Beauty Empire | Lekki Phase 1</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --pink: #ff4d8d;
+            --gold: #d4af37;
+            --dark: #121212;
+            --cream: #fff8f3
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Poppins, sans-serif;
+            background: var(--cream)
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 30px;
+            padding: 5% 5%
+        }
+
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px
+        }
+
+        .shop-item {
+            border: 1px solid #f0d9c6;
+            border-radius: 18px;
+            overflow: hidden
+        }
+
+        .shop-item .img {
+            height: 260px;
+            background: #ffe2ea;
+            display: grid;
+            place-items: center;
+            overflow: hidden
+        }
+
+        .shop-item .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover
+        }
+
+        .vip {
+            background: #121212;
+            color: white;
+            padding: 90px 5%;
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 50px
+        }
+
+        @media(max-width:900px) {
+
+            .hero,
+            .vip,
+            .shop-grid {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- TOP -->
+    <div style="background:#121212;color:white;text-align:center;padding:8px;font-size:11px">
+        📍 5B Charles Ifeanyi, Off Doherty, Lekki Phase 1 • Mon-Sat 9AM-8PM | Sun 10AM-6PM • 👑 VIP + Unisex + Kiddies +
+        Cocktails
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1 style="font-size:60px;line-height:.9">Where Beauty Meets <em style="color:#ff4d8d">Posh Luxury</em></h1>
+            <p>Sales from ₦150k cheapest to ₦500k best seller. Human hair, wigs, frontal, braids, dread, lashes, nails.
+            </p>
+            <h3 style="margin-top:20px">Price Menu:</h3>
+            <p>Best: ₦500k → Cheapest: ₦150k</p>
+        </div>
+        <div style="height:500px;border-radius:28px;overflow:hidden;background:#ffe2ea">
+            <img src="images/main.jpg" style="width:100%;height:100%;object-fit:cover"
+                onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- VIP SECTION -->
+    <section id="vip" class="vip">
+        <div>
+            <h2 style="font-size:54px">VIP Section For <span style="color:#d4af37">Real Posh Dolls</span></h2>
+            <p>Private suite, cocktails, champagne, free photoshoot. Posh Dolls Are The Prettiest 👑</p>
+            <ul style="margin-top:15px;line-height:2.2">
+                <li>👑 Private VIP Suite</li>
+                <li>🍾 Cocktails & Champagne</li>
+                <li>💎 Raw Donor ₦500k Best Seller</li>
+            </ul>
+        </div>
+        <div style="background:#1e1e1e;padding:24px;border-radius:24px;border:1px solid #333">
+            <div>Raw Donor Wig 30” – <b style="color:#d4af37">₦500,000</b></div>
+            <div>VIP Frontal Install – <b style="color:#d4af37">₦450,000</b></div>
+            <div>Boho Braids – <b style="color:#d4af37">₦300,000</b></div>
+            <div>Luxury Dread – <b style="color:#d4af37">₦250,000</b></div>
+            <div>Classic Wig – <b style="color:#ff8fb1">₦150,000 (Cheapest)</b></div>
+            <img src="images/vip.jpg"
+                style="width:100%;height:160px;object-fit:cover;border-radius:16px;margin-top:15px"
+                onerror="this.style.display='none'">
+        </div>
+    </section>
+
+    <!-- SHOP WITH PICTURES -->
+    <section style="padding:80px 5%;background:white">
+        <h2 style="text-align:center;font-size:44px">Shop – From ₦150k to ₦500k</h2>
+        <div class="shop-grid" style="margin-top:30px">
+            <div class="shop-item">
+                <div class="img"><img src="images/wig500k.jpg" onerror="this.parentNode.innerHTML='👑'"></div>
+                <div style="padding:12px"><b>Raw Donor Wig</b><br>₦500,000 – Best Seller</div>
+            </div>
+            <div class="shop-item">
+                <div class="img"><img src="images/wig350k.jpg" onerror="this.parentNode.innerHTML='💁‍♀️'"></div>
+                <div style="padding:12px"><b>HD Frontal Wig</b><br>₦350,000</div>
+            </div>
+            <div class="shop-item">
+                <div class="img"><img src="images/braids.jpg" onerror="this.parentNode.innerHTML='🦱'"></div>
+                <div style="padding:12px"><b>Boho Braids</b><br>₦200,000</div>
+            </div>
+            <div class="shop-item">
+                <div class="img"><img src="images/classic150k.jpg" onerror="this.parentNode.innerHTML='🌀'"></div>
+                <div style="padding:12px"><b>Classic Wig</b><br>₦150,000 – Cheapest</div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background:#121212;color:#c9b8b0;padding:40px;text-align:center">
+        © Lamine Posh Beauty Empire • 5B Charles Ifeanyi, Lekki • Posh Dolls Are The Prettiest 👑
+    </footer>
+</body>
+
+</html>
